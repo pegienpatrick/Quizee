@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="40px"
+            >
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quize Details"
+                android:padding="150px"
+                />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Enter Exam Title"
+                android:layout_weight="0.5"
+                >
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:drawableLeft="@mipmap/id"
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Exam Duration(hrs)"
+                android:layout_weight="0.5"
+                >
+                <EditText
+                    android:id="@+id/duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Questions"
+
+                >
+                <EditText
+                    android:id="@+id/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:id="@+id/opening"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:text="Opening Date"
+                        android:paddingRight="100px"
+                        >
+
+                    </TextView>
+
+                </TableRow>
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+
+                    <TimePicker
+                        android:id="@+id/timestart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"/>
+
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <TableRow
+                    android:id="@+id/closing"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:text="Closing Date"
+                        android:paddingRight="100px"
+                        >
+
+                    </TextView>
+
+                </TableRow>
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+                    <TimePicker
+                        android:id="@+id/timeend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"/>
+
+
+
+
+
+            </TableLayout>
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="90dp"/>
+
+            <Button
+                android:id="@+id/SAVE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:text="SAVE"
+                android:textColor="#FFFFFF" />
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <Button
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8BC34A"
+                android:text="My Questions"
+                android:textColor="#FFFFFF" />
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <Button
+                android:id="@+id/results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F2D2B"
+                android:text="View Students Results"
+                android:textColor="#FFFFFF" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <Button
+                android:id="@+id/deleteQuize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF5722"
+                android:text="Delete Quize"
+                android:textColor="@color/cardview_light_background"></Button>
+
+
+
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="550dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

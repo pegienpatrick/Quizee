@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="40px"
+        >
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:padding="150px"
+        />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+    android:hint="Enter Email"
+        android:layout_weight="0.5"
+    >
+        <EditText
+            android:id="@+id/lgemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@mipmap/mail"
+            />
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+<androidx.legacy.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+
+<com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Enter Password"
+        android:layout_weight="0.5"
+    >
+        <EditText
+            android:id="@+id/lgpasswd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:inputType="textPassword"
+            android:drawableLeft="@mipmap/password"
+            />
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF" />
+
+
+        <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/prreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:drawableLeft="@mipmap/plus"
+            android:text="New User Registration"
+            android:textColor="#FAF8F8" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotpassword"
+            android:text="Forgot Password"
+            ></Button>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="550dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    android:gravity="top"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/cardview_dark_background"
+        >
+        <TextView
+            android:id="@+id/whoami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="80"
+            android:textColor="@color/cardview_light_background"
+            ></TextView>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:layout_weight="20"
+            android:textColor="@color/cardview_light_background"
+            android:text="Log Out"></Button>
+    </LinearLayout>
+
+<androidx.legacy.widget.Space
+android:layout_width="match_parent"
+android:layout_height="10dp"/>
+
+     <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+
+    >
+        <EditText
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:inputType="text"
+            android:drawableLeft="@mipmap/id"
+            />
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+<androidx.legacy.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="My Quizes"
+        android:padding="20px"
+        ></TextView>
+
+    <Button
+        android:id="@+id/newQuize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ New Quizze"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/cardview_light_background"
+        ></Button>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <LinearLayout
+            android:id="@+id/holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50px"
+        >
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

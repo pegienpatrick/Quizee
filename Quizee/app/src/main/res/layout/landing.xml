@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="50px"
+    >
+
+    <Button
+        android:id="@+id/stLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#95B570"
+
+        android:drawableLeft="@mipmap/ic_person"
+        android:text="Student Login"
+        android:paddingRight="100px"
+
+        ></Button>
+
+<androidx.legacy.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="90dp"/>
+    <Button
+        android:id="@+id/prLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FAFBF7"
+
+        android:drawableLeft="@mipmap/prof"
+        android:paddingRight="180px"
+        android:text="Prof Login"></Button>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="190dp"/>
+
+</LinearLayout>

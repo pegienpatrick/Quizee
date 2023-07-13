@@ -1,0 +1,2 @@
+rootProject.name='Quizee'
+include ':app'
